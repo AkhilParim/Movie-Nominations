@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-{/* import Swal from 'sweetalert2' */}
 import Movie from './Movie';
 import NominatedCard from './NominatedCard';
+{/* import Swal from 'sweetalert2' */}
 
 
 const SEARCH_API = "http://www.omdbapi.com/?apikey=ef1a2d95&s="
