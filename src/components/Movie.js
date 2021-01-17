@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React from 'react';
 import Checked from "../checked.svg";
 
 function Movie(props) {

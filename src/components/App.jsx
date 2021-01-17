@@ -17,7 +17,6 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [error, setError] = useState('');
-  const [visible, setVisible] = useState(false)
 
 const handleOnSubmit = (e) => {
   const searchField = document.getElementById("search").value;
