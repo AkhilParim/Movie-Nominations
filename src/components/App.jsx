@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert2'
-
+{/* import Swal from 'sweetalert2' */}
 import Movie from './Movie';
 import NominatedCard from './NominatedCard';
 
@@ -53,16 +52,16 @@ function addNomination(e) {
   console.log(newSelected);
   setSelected(newSelected);
   console.log(selected);
-  if(selected.length == 4) {
+{/*  if(selected.length == 4) {
     popup();
-  }
+  } */}
 }
 
 function removeNomination(e) {
   const newSelected = selected.filter((item) => item !== e);
   setSelected(newSelected);
 }
- function popup() {
+{/* function popup() {
    return (
       Swal.fire({
         title: 'Do you want to confirm the nominations?',
@@ -83,6 +82,7 @@ function removeNomination(e) {
       })
    )
  }
+*/}
 {/* function loader() {
      setTimeout(() => {
        return <p>Loading</p>
@@ -139,7 +139,7 @@ function removeNomination(e) {
             return (
               <>
                 {selected.length > 0 && selected.map((select, index) => <NominatedCard key={index} remnominated={removeNomination} movieId={select} /> )}
-                {popup}
+                {/* {popup} */}
               </>
             )
           } else {
